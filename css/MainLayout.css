@@ -1,0 +1,47 @@
+﻿
+/* MudNavLink의 스타일을 흉내낸 커스텀 클래스 */
+.nav-mimic-item {
+    height: 70px !important;
+    padding-left: 16px !important; /* NavLink 기본 패딩 */
+    display: flex !important;
+    align-items: center !important;
+    transition: background-color 0.3s;
+}
+
+    /* 아이콘 위치와 간격 강제 조정 */
+    .nav-mimic-item .mud-list-item-icon {
+        margin-right: 12px !important; /* NavLink의 아이콘-텍스트 간격 */
+        min-width: unset !important;
+        color: inherit !important;
+    }
+
+    /* 텍스트 스타일 정렬 */
+    .nav-mimic-item .mud-list-item-text {
+        margin: 0 !important;
+        flex: none !important;
+    }
+
+.nav-mimic-item {
+    /* 서랍이 열릴 때 내부 컨텐츠가 넘쳐도 레이아웃이 깨지지 않게 방지 */
+    overflow: hidden !important;
+    white-space: nowrap !important; /* 글자 줄바꿈 절대 방지 */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+    .nav-mimic-item .mud-button-label {
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        /* 서랍 애니메이션 중에 글자가 아래로 떨어지는 것 방지 */
+        overflow: hidden !important;
+        text-overflow: clip !important;
+    }
+
+    /* 텍스트 컴포넌트 강제 설정 */
+    .nav-mimic-item .mud-typography {
+        white-space: nowrap !important;
+        flex-shrink: 0 !important; /* 공간 모자라도 크기 줄이지 마 */
+    }
