@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "iPathWeb.App",
   "resources": {
-    "hash": "sha256-yUfThefDiVUekZek3Vp5ZhEnd2OXhHOUew5ZpcKt9Oo=",
+    "hash": "sha256-4y+AqaQDFByOvwtCzLLEN8JywKNgLJmqHWrpQAtXm7g=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VtJx+zu4muUSj5Eco+qnJRk+9TH2RlFi0DRq+RqE3Ss="
     },
@@ -20,9 +20,9 @@
     "assembly": {
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "Blazored.SessionStorage.wasm": "sha256-nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8=",
-      "iPathWeb.App.wasm": "sha256-3Y6+U3aI29w8NJi5MY6aqQGRqAV4qlLgQTitjn5vTuA=",
-      "iPathWeb.Locale.wasm": "sha256-YDAliRBnJezUXunYQjj1mg0S6QdcmjfOFVBVrZmgYSQ=",
-      "iPathWeb.Models.wasm": "sha256-2Vszyv6U3GkW26ZFXetSmHsfsv2qocJUisTlKxLvxEg=",
+      "iPathWeb.App.wasm": "sha256-zCeMYC3FSZ+XygW1zE/3aBcAP6KLJibwCIIEnsiz/Ok=",
+      "iPathWeb.Locale.wasm": "sha256-kCyYNYgZBhLpsfVs/6eg1pVYFuhsTAMl4R+azRqOuZI=",
+      "iPathWeb.Models.wasm": "sha256-fsmuUrpkcWl/ZhhaY5ZEfzNHPH62KKKtBgWtXKEpWOo=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-VXih3VpywassTAMjr8wbqJgCsIwUybAhI9xYG+GEdjo=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-TqRdPU2wTsJlzBM535S67nINcCh/lPVZSJMdU9oFI0o=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-laJNWlkmPBpp7aKBNtsnpp/vL3nfl5sChbF05pHe448=",
