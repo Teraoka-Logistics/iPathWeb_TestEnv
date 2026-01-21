@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "iPathWeb.App",
   "resources": {
-    "hash": "sha256-ekD/InldXqOfnfcB9R+CoI7I/RztJvJ9uk5JG1IORm4=",
+    "hash": "sha256-yUfThefDiVUekZek3Vp5ZhEnd2OXhHOUew5ZpcKt9Oo=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VtJx+zu4muUSj5Eco+qnJRk+9TH2RlFi0DRq+RqE3Ss="
     },
@@ -20,9 +20,9 @@
     "assembly": {
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "Blazored.SessionStorage.wasm": "sha256-nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8=",
-      "iPathWeb.App.wasm": "sha256-Tzb9EqGXMzJEEZZdMe8JZa9gMmjw8wCnx34NnRoPKVI=",
-      "iPathWeb.Locale.wasm": "sha256-o0EV4g6eqp3e8VX0HdukR6aQK9Am5t6pnmAw+N+faXI=",
-      "iPathWeb.Models.wasm": "sha256-C0ZhZ7TRjIg/E6MiZlpTppiAIohSN73pzcahCRwaZ4Q=",
+      "iPathWeb.App.wasm": "sha256-3Y6+U3aI29w8NJi5MY6aqQGRqAV4qlLgQTitjn5vTuA=",
+      "iPathWeb.Locale.wasm": "sha256-YDAliRBnJezUXunYQjj1mg0S6QdcmjfOFVBVrZmgYSQ=",
+      "iPathWeb.Models.wasm": "sha256-2Vszyv6U3GkW26ZFXetSmHsfsv2qocJUisTlKxLvxEg=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-VXih3VpywassTAMjr8wbqJgCsIwUybAhI9xYG+GEdjo=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-TqRdPU2wTsJlzBM535S67nINcCh/lPVZSJMdU9oFI0o=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-laJNWlkmPBpp7aKBNtsnpp/vL3nfl5sChbF05pHe448=",
@@ -40,7 +40,7 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-xyqqv0SMCahnrOs+p5QYDHoh/BAYlbNtyjTTpqmRW/g=",
       "Microsoft.JSInterop.wasm": "sha256-nR9ajJyUAPzrktFn8/ZI9xF1wtCXlLBI73ErG5ioWbM=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-jY5jCfGtvxvrCqIe6qLo82M6eF/a19pO3pO7KbeBzSg=",
-      "MudBlazor.wasm": "sha256-TS497hmRZByZzg/ukf6DzjUcCoP3L6WaQAL+RYaUn9o=",
+      "MudBlazor.wasm": "sha256-CHSb/gzOpPqAJW40wSZ23Ck4uHwC1iH4ttAFcqsJIpY=",
       "OpenCvSharp.wasm": "sha256-rQxMoRnhVe7Php3ONK/7T0/va1RkQvgRfwxwwhOTH2g=",
       "System.Collections.Concurrent.wasm": "sha256-aLKBhSfKHm9BaS+0G6Y9d6lMHumYFGuX/WvILj9NwZk=",
       "System.Collections.Immutable.wasm": "sha256-O8LRUJznbgDRwM07D2xwyvZvVQ1oJpWoUMRjGRUyyCs=",
