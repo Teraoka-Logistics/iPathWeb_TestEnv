@@ -344,14 +344,35 @@ window.layoutRenderer = {
     _drawScene: function (ctx, scale, isMinimap = false) {
         // 1. 壁の描画
         if (this.data.WallPoint && this.data.WallPoint.length > 1) {
+            const p = this.data.WallPoint;
+
+            ctx.save();
+            ctx.beginPath();
+
+            ctx.rect(-100000, -100000, 200000, 200000);
+
+            ctx.moveTo(p[0].X, p[0].Y);
+            for (let i = 1; i < p.length; i++) {
+                ctx.lineTo(p[i].X, p[i].Y);
+            }
+            ctx.closePath();
+
+            ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+            ctx.fill("evenodd");
+            ctx.restore();
+
             ctx.beginPath();
             ctx.strokeStyle = "#444";
-            ctx.lineWidth = isMinimap ? (4 / scale) : 4;
+            const baseWidth = 4;
+            ctx.lineWidth = isMinimap ? (baseWidth / scale) : (baseWidth * 2 / scale);
             ctx.lineJoin = "round";
-            const p = this.data.WallPoint;
+            ctx.lineCap = "round";
+
             ctx.moveTo(p[0].X, p[0].Y);
-            for (let i = 1; i < p.length; i++) ctx.lineTo(p[i].X, p[i].Y);
-            if (p[0].X === p[p.length - 1].X && p[0].Y === p[p.length - 1].Y) ctx.closePath();
+            for (let i = 1; i < p.length; i++) {
+                ctx.lineTo(p[i].X, p[i].Y);
+            }
+            ctx.closePath();
             ctx.stroke();
         }
 
@@ -706,15 +727,19 @@ window.layoutRenderer = {
                     // Left = 3,   // 左（西）
                     // Right = 4   // 右（東）
                     switch (aisle.Direction) {
-                        case 1: arrow = isVertical ? "←" : "↑"; break;
-                        case 2: arrow = isVertical ? "→" : "↓"; break;
-                        case 3: arrow = isVertical ? "↑" : "←"; break;
-                        case 4: arrow = isVertical ? "↓" : "→"; break;
+                        case 1: arrow = isVertical ? "←" : "↑"; break;    // Up
+                        case 2: arrow = isVertical ? "→" : "↓"; break;    // Down
+                        case 4: arrow = isVertical ? "↑" : "←"; break;    // Left
+                        case 8: arrow = isVertical ? "↓" : "→"; break;    // Right
+                        case 3: arrow = isVertical ? "↔" : "↕"; break;    // BothVertical (1|2)
+                        case 12: arrow = isVertical ? "↕" : "↔"; break;   // BothHorizontal (4|8)
+                        case 15: arrow = "✥"; break;                      // All
+                        default: arrow = ""; break;
                     }
 
                     if (arrow) {
                         ctx.fillStyle = aisleColor; // 矢印をエリアカラーで強調します
-                        ctx.font = `bold ${fontSize * 2.2}px Arial`;
+                        ctx.font = `bold ${fontSize * 3}px Arial`;
                         // 文字の縁取り（ハロー）で可読性を確保します
                         ctx.strokeStyle = "white";
                         ctx.lineWidth = 4 / scale;

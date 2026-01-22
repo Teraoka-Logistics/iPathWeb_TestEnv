@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "iPathWeb.App",
   "resources": {
-    "hash": "sha256-4y+AqaQDFByOvwtCzLLEN8JywKNgLJmqHWrpQAtXm7g=",
+    "hash": "sha256-vxwfJNqNobuxxoFdZggIbac6KO+R1S4IWuAisGGURlc=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VtJx+zu4muUSj5Eco+qnJRk+9TH2RlFi0DRq+RqE3Ss="
     },
@@ -9,7 +9,7 @@
       "dotnet.runtime.js": "sha256-6bV/iAemowb59rmItegP8VsxwWpWUNyMb0Q76Fvvsjo="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-crxzApoqvm0jZDGyPBPaG7zWurYrM8fXM3dKUxw84iY="
+      "dotnet.native.wasm": "sha256-gsd6sNwrt6Wty2u5JRvsxJkP/+tj+G1aIBNwK7HxCQs="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -20,11 +20,11 @@
     "assembly": {
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "Blazored.SessionStorage.wasm": "sha256-nQXuCGHos7iwp2WxRUgarKmWgJYChaVQp2NajgNU3V8=",
-      "iPathWeb.App.wasm": "sha256-zCeMYC3FSZ+XygW1zE/3aBcAP6KLJibwCIIEnsiz/Ok=",
-      "iPathWeb.Locale.wasm": "sha256-kCyYNYgZBhLpsfVs/6eg1pVYFuhsTAMl4R+azRqOuZI=",
-      "iPathWeb.Models.wasm": "sha256-fsmuUrpkcWl/ZhhaY5ZEfzNHPH62KKKtBgWtXKEpWOo=",
+      "iPathWeb.App.wasm": "sha256-oBGj8ReweDlRvVQKW7kT1nkeWHM9RwhBM8JTi5dZcIo=",
+      "iPathWeb.Locale.wasm": "sha256-sVwtA1Y4OizK8/HcAhWtMuy5j3CUJAUFvbQoYQA+ZsE=",
+      "iPathWeb.Models.wasm": "sha256-DOvMKX3FNF5hy5A7Z6E7Z98gdnqRZis3TH8M78oN/4o=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-VXih3VpywassTAMjr8wbqJgCsIwUybAhI9xYG+GEdjo=",
-      "Microsoft.AspNetCore.Components.wasm": "sha256-TqRdPU2wTsJlzBM535S67nINcCh/lPVZSJMdU9oFI0o=",
+      "Microsoft.AspNetCore.Components.wasm": "sha256-H0uKyVbV9veR1HLAkoGzmUV60AfWiyA7ljXA7ImJY6I=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-laJNWlkmPBpp7aKBNtsnpp/vL3nfl5sChbF05pHe448=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-ku/lBnttIJvtHDERl++7l7LwG/1gRA1+0ogR2Tv2nVg=",
       "Microsoft.Extensions.Configuration.Abstractions.wasm": "sha256-XR+WUfg8LtnrwdXFBnV+qO3ROyp6cYCfl1AZajIAheM=",
@@ -40,11 +40,11 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-xyqqv0SMCahnrOs+p5QYDHoh/BAYlbNtyjTTpqmRW/g=",
       "Microsoft.JSInterop.wasm": "sha256-nR9ajJyUAPzrktFn8/ZI9xF1wtCXlLBI73ErG5ioWbM=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-jY5jCfGtvxvrCqIe6qLo82M6eF/a19pO3pO7KbeBzSg=",
-      "MudBlazor.wasm": "sha256-CHSb/gzOpPqAJW40wSZ23Ck4uHwC1iH4ttAFcqsJIpY=",
+      "MudBlazor.wasm": "sha256-ZfAMdSHA1e/pHnXdlFR+q3/nU5y98KmF+5HtFsqhuTU=",
       "OpenCvSharp.wasm": "sha256-rQxMoRnhVe7Php3ONK/7T0/va1RkQvgRfwxwwhOTH2g=",
       "System.Collections.Concurrent.wasm": "sha256-aLKBhSfKHm9BaS+0G6Y9d6lMHumYFGuX/WvILj9NwZk=",
       "System.Collections.Immutable.wasm": "sha256-O8LRUJznbgDRwM07D2xwyvZvVQ1oJpWoUMRjGRUyyCs=",
-      "System.Collections.wasm": "sha256-od4NBI1ZkkCGY3fLtiJ53Rodhe50jcLpjzGND6/HYPY=",
+      "System.Collections.wasm": "sha256-+nw5wZhC3wGO3LybXicuJju75soWqMSjx2LelZAz+mk=",
       "System.ComponentModel.Annotations.wasm": "sha256-HGfyzHT1ZFJeOK8ZgVdtAf5iT7vKE3gbCmqvR1h+eC4=",
       "System.ComponentModel.Primitives.wasm": "sha256-71+DUlnYvH/IzSdOPGxq9MKuUgX7Lb4ya9wql900iNc=",
       "System.ComponentModel.TypeConverter.wasm": "sha256-ZHZQDi+L11zLfUj3G42OpBxJl+jd1LYvwssJYaZu5y0=",
@@ -58,7 +58,7 @@
       "System.Net.Http.wasm": "sha256-XeIFDMx/0HO3Ea6UzNqv7q2XfTP/UVXXvo5yGpDaHmU=",
       "System.Net.Primitives.wasm": "sha256-SzHwskVflVUF7fSY3wmnCR179HN70oOGfF/t1FsL58s=",
       "System.ObjectModel.wasm": "sha256-mlwQq1sMWVJzPTsA3C1oamVBniHySALAJpIzn+oyMSc=",
-      "System.Private.CoreLib.wasm": "sha256-5xvq8m9gUo+l8ima0w2rnMQ9+HYcgqA+xp6dPZ8U7Z0=",
+      "System.Private.CoreLib.wasm": "sha256-sWRr6B88Q1TbrJAM6GAlzu/WmIQ53tXjFsy47MXkU4A=",
       "System.Private.Uri.wasm": "sha256-IA29RRQPrWAq/dFCS4molk1DeJjQ+ovjIyMVgGapc/0=",
       "System.Runtime.CompilerServices.Unsafe.wasm": "sha256-arcWFMYdpmRCbnQlLUDZau1MTUz5/pOfKa+lg5U/9Xg=",
       "System.Runtime.InteropServices.JavaScript.wasm": "sha256-jyWIOjFJWVD6H+c7p3jwTPdQKrWe7mTa1tIUGvhI88s=",
