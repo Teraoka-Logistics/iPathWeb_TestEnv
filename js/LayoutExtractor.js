@@ -53,15 +53,17 @@ window.decodeRgbaFromByteArray = (dotnetBytes) => {
 
 // Canvas に RGBA データを描画する
 window.drawRgbaOnCanvas = (canvas, width, height, bytes) => {
-    if (!canvas) {
+    // 1. 객체가 존재하고, getContext 함수가 있는지 확실히 체크
+    if (!canvas || typeof canvas.getContext !== 'function') {
+        console.warn("drawRgbaOnCanvas: canvas element is invalid or not yet rendered.");
         return;
     }
-    const ctx = canvas.getContext('2d');
 
-    // データサイズチェック
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // 데이터 사이즈 체크 및 렌더링 로직 (기존과 동일)
     if (bytes.length !== width * height * 4) {
-        console.warn("Data size mismatch. Canvas might be empty.");
-        // 空データで初期化する場合のフォールバック
         canvas.width = width;
         canvas.height = height;
         ctx.clearRect(0, 0, width, height);
@@ -548,17 +550,31 @@ window.layoutMap.getShelfPointer = (element, zoom, clientX, clientY) => {
     };
 };
 
-window.layoutMap.setShelfAdjustZoom = (canvas, svg, zoom) => {
-    if (!canvas || !svg) return;
+window.layoutMap.applyZoom = (elements, zoom) => {
     const transform = `scale(${zoom})`;
-    canvas.style.transform = transform;
-    canvas.style.transformOrigin = '0 0';
-    svg.style.transform = transform;
-    svg.style.transformOrigin = '0 0';
+    const origin = '0 0';
+
+    // 전달받은 모든 요소(캔버스, SVG 등)에 동일한 줌 적용
+    elements.forEach(el => {
+        if (el && el.style) {
+            el.style.transform = transform;
+            el.style.transformOrigin = origin;
+        }
+    });
 };
 
 window.layoutMap.initShelfAdjustZoom = (canvas, svg) => {
     if (!canvas || !svg) return;
     canvas.style.transformOrigin = '0 0';
     svg.style.transformOrigin = '0 0';
+};
+
+window.layoutMap.resetScrollToCenter = (container) => {
+    if (!container) return;
+
+    const maxX = container.scrollWidth - container.clientWidth;
+    const maxY = container.scrollHeight - container.clientHeight;
+
+    container.scrollLeft = maxX / 2;
+    container.scrollTop = maxY / 2;
 };
